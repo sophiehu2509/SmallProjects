@@ -11,7 +11,10 @@
     <script type="text/javascript" src="js/script.js"></script>
 
   </head>
-
+<<<<<<< HEAD
+  <body>
+    <h1> !!!</h1>
+=======
   <body data-spy = "scroll">
     <div id="list1">
       <p>Let's &nbsp; eat &nbsp; catties.</p>
@@ -24,6 +27,6 @@
 
        <p > <a href = "https://sophiehu2509.github.io/resume_web/web_3/"> Ye's Resume </a></p>
     </div>
-
+>>>>>>> Proj_2
   </body>
 </html>
