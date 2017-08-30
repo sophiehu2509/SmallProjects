@@ -1,0 +1,33 @@
+html，body{
+	font-family: 'Roboto Slab', serif;
+	height: 100%;
+}
+.grid{
+	 position: absolute;
+	 height: 80%;
+	 width: 80%;
+	 top: 10%;
+	 left: 10%;
+}
+#title{
+	text-align: center;
+}
+.box {
+  position: relative;
+  z-index: 1;
+  height: 200px;
+  width: 200px;
+  background-color: #444;
+	float:left;
+}
+footer{
+	font-size: 30px;
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+	left: 0;
+	text-align: center;
+}
+footer a:hover{
+	text-decoration: underline;
+}
