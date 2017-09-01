@@ -2,31 +2,36 @@ html，body{
 	font-family: 'Roboto Slab', serif;
 	height: 100%;
 }
-.grid{
-	 position: absolute;
-	 height: 80%;
-	 width: 80%;
-	 top: 10%;
-	 left: 10%;
-}
-#title{
+h1{
+	font-size: 35px;
 	text-align: center;
+	color: #33AFFF;
 }
-.box {
-  position: relative;
-  z-index: 1;
-  height: 200px;
-  width: 200px;
-  background-color: #444;
-	float:left;
+#pic img{
+	position: absolute;
+	top:20%;
+	left:38%;
+	width:25%;
+	margin: auto;
+	box-shadow: 0px 0px 0px 0px white;
+}
+#tex{
+	display: none;
+	text-align: center;
+	color:blue;
+	text-decoration-style: solid;
+	font-size: 35px;
+	z-index: 100;
+	top:50%;
 }
 footer{
-	font-size: 30px;
-	position: absolute;
-	right: 0;
-	bottom: 30px;
-	left: 0;
+	position:absolute;
 	text-align: center;
+	margin: auto;
+	width: 100%;
+	 top: 80%;
+	 font-size: 25px;
+
 }
 footer a:hover{
 	text-decoration: underline;

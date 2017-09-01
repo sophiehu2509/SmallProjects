@@ -1,45 +1,24 @@
-function randomColor(){
-  var r=Math.floor(Math.random()*255);
-  var g=Math.floor(Math.random()*255);
-  var b=Math.floor(Math.random()*255);
-  var rgb='rgb('+r+','+g+','+b+')';
-  //$(this).css({background-color: rgb});
-  $(this).css('background-color', rgb);
-  $(this).css('z-index', "1000");
-  $(this).css('box-shadow', "0 0 8px white");
-}
 
-function end(){
-  //$(this).css({background-color: rgb});
+$(document).ready(function(){
+  $("#pic img").on("click", function(){
+    var count = 10;
+    var curr = $(this).css('box-shadow');
+    var array = curr.split("px");
 
-  $(this).css('z-index', "1");
-  $(this).css('box-shadow', "none");
-}
+    var blur = parseInt(array[array.length - 3]) + 1;
+    var speed = parseInt(array[array.length-2]) + 3;
+    console.log(blur);
 
-var color = document.getElementsByClassName('box');
-for(var i = 0; i<color.length; i ++){
-  color[i].addEventListener('mouseover', randomColor, false);
-}
-for(var i = 0; i<color.length; i ++){
-  color[i].addEventListener('mouseleave', end, false);
-}
+    if(blur > 20){
+      $("h1").css('display', 'none');
+      $("#tex").css('display', 'inline');
+      $("#tex").css('z-index', '10000');
 
+    }else{
+      //pay attention for the form： no space between number and px, one space between each px
+      $(this).css('box-shadow', '0px 0px '  + blur + 'px ' + speed + 'px ' + 'grey');
+      $(this).css('z-index', '-1');
 
-
-/*$(document).ready(function () {
-
-	function randomColor() {
-		return '#' + Math.random().toString(16).slice(2, 8);
-	};
-
-	$(".box").on("mouseenter", function () {
-		$(this).css('background-color', randomColor());
-		$(this).css('box-shadow', "0 0 8px white");
-		$(this).css('z-index', "100000");
-	});
-
-	$(".box").on("mouseleave", function () {
-		$(this).css('box-shadow', "none");
-		$(this).css('z-index', "1");
-	});
-});*/
+   }
+  });
+});
