@@ -1,0 +1,127 @@
+html，body{
+	font-family: 'Roboto Slab', serif;
+	height: 100%;
+}
+h1{
+	position: relative;
+	padding: 20px;
+	left: 35%;
+	color: pink;
+}
+.dice{
+	position: relative;
+	background: white;
+	height: 120px;
+	width: 120px;
+	margin: 30px;
+	left: 30%;
+
+	border-radius: 15px;
+	display: inline-block;
+	border-width: thin;
+	border-color: #111111;
+	border-style: solid;
+	box-shadow: 2px 2px 4px #000000;
+}
+
+.p{
+	background-color: red;
+	border-radius: 50%;
+	margin: 10px;
+	position: absolute;
+	height: 20px;
+	width: 20px;
+}
+
+.pic1{
+	top: 5%;
+
+}
+.pic2{
+	top: 35%;
+}
+.pic3{
+	top: 65%;
+}
+.pic4{
+	top: 35%;
+	left: 35%;
+}
+
+.pic5{
+	top: 5%;
+	left: 65%;
+}
+.pic6{
+	top: 35%;
+	left: 65%;
+}
+.pic7{
+	top: 65%;
+	left: 65%;
+}
+
+#btn{
+	position: absolute;;
+	left: 50%;
+	top: 70%;
+	background-color: #FF00FF;
+	width: 140px;
+	border-radius: 10px;
+
+	box-shadow: 2px 2px 4px #000000;
+
+}
+
+.shake {
+	-webkit-animation: shake 1s;
+	-moz-animation: shake 1s;
+	-ms-animation: shake 1s;
+	animation: shake 1s;
+
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+#total{
+	position: absolute;
+	top:60%;
+	width: 80%;
+
+	text-align: center;
+	font-size: 30px;
+}
+
+footer{
+	font-size: 30px;
+	position: absolute;
+	border-radius: 5px;
+	bottom: 30px;
+	left: 10%;
+	text-align: center;
+	background-color: #6495ED;
+}
+footer a{
+	color: pink;
+	padding: 10px;
+}
+footer a:hover{
+	text-decoration: underline;
+}
