@@ -1,0 +1,89 @@
+html，body{
+	font-family: 'Roboto Slab', serif;
+	height: 100%;
+}
+h1{
+	text-align: center;
+}
+.container h1{
+	margin: 12px 0;
+	color: pink;
+	text-align: center;
+}
+hr{
+	width: 300px;
+	border-width: medium;
+}
+img{
+	position:relative;
+	margin-left: 60px;
+}
+
+.btns{
+	margin-left: 160px;
+	color: blue;
+}
+
+.btn{
+	background-color: #5F9EA0;
+}
+
+
+.shake {
+	-webkit-animation: shake 1.5s;
+	-moz-animation: shake 1.5s;
+	-ms-animation: shake 1.5s;
+	animation: shake 1.5s;
+
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateY(0);}
+	14%, 43%, 71%, 95%, 100% {-webkit-transform: translateY(30px);
+						 -webkit-animation-timing-function: ease-out; }
+	29%, 57%, 86% {-webkit-transform: translateY(-30px);
+				   -webkit-animation-timing-function: ease-out}
+}
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateY(0);}
+	14%, 43%, 71%, 95%, 100% {-moz-transform: translateY(30px);
+						 -moz-animation-timing-function: ease-out; }
+	29%, 57%, 86% {-moz-transform: translateY(-30px);
+				   -moz-animation-timing-function: ease-out}
+}
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateY(0);}
+	14%, 43%, 71%, 95%, 100% {-o-transform: translateY(30px);
+						 -o-animation-timing-function: ease-out; }
+	29%, 57%, 86% {-o-transform: translateY(-30px);
+				   -o-animation-timing-function: ease-out}
+}
+@-ms-keyframes shake {
+	0%, 100% {-ms-transform: translateY(0);}
+	14%, 43%, 71%, 95%, 100% {-ms-transform: translateY(30px);
+						 -ms-animation-timing-function: ease-out; }
+	29%, 57%, 86% {-ms-transform: translateY(-30px);
+				   -ms-animation-timing-function: ease-out}
+}
+
+
+
+
+
+
+footer{
+	font-size: 15px;
+	position: absolute;
+	border-radius: 5px;
+	bottom: 20px;
+	left: 10%;
+	text-align: center;
+	background-color: #6495ED;
+}
+footer a{
+	color: pink;
+	padding: 10px;
+}
+footer a:hover{
+	text-decoration: underline;
+}
