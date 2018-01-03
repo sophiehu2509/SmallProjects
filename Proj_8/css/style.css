@@ -28,6 +28,11 @@ img{
 	background-color: #5F9EA0;
 }
 
+.btns:active{
+	background-color: #5F9EA0;
+	color: blue;
+}
+
 
 .shake {
 	-webkit-animation: shake 1.5s;
@@ -65,10 +70,6 @@ img{
 	29%, 57%, 86% {-ms-transform: translateY(-30px);
 				   -ms-animation-timing-function: ease-out}
 }
-
-
-
-
 
 
 footer{
