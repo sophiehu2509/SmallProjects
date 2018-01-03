@@ -1,22 +1,41 @@
 $(document).ready(function(){
 
 var cur = rock;
-
+var num2;
 $('.btn').on("click", function(){
-  $('.left.right').addClass('shake');
+   num2 = this.id;
+   result();
+});
+$('.button').off('click');
 
-  var num2 = this.id;
-  setTimeout(function(){
-    var num1 = randomChoice();
+function result(){
+$('.player').addClass('shake');
+  var i = 3;
+
+  count();
+  function count(){
+    $('.title h1').text(i);
+
+      if (i == 0){
+        display();
+      }else{
+        i --;
+        setTimeout(count, 500);
+      }
+  }
+}
+
+  function display(){
     $('.left').hide();
     $('.left.'+ num2).show();
-    compare(num1, num2);
-    console.log(num2);
+    var num1 = randomChoice();
 
-    $('.left.right').removeClass('shake');
-},500);
-
-});
+    setTimeout(function(){
+      compare(num1, num2);
+      console.log(num2);
+      $('.player').removeClass('shake');
+  },600);
+  }
 
   function compare(n1, n2){
     if ((n1 == 1 && n2=='paper') ||(n1 == 2 && n2=='rock')||(n1 == 3 && n2=='scissors')){
@@ -51,7 +70,5 @@ $('.btn').on("click", function(){
       return ran;
     }
   }
-
-
 
 });
