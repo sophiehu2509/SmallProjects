@@ -1,0 +1,105 @@
+body{
+
+}
+.col-md-1{
+  height:100px;
+}
+#box_1{
+  background-color: pink;
+}
+#box_2{
+  background-color: #F4D03F;
+}
+#box_3{
+  background-color: #EC7063;
+}
+#box_4{
+  background-color: #5499C7;
+}
+#box_5{
+  background-color: #CA6F1E;
+}
+#box_6{
+  background-color: #239B56;
+}
+#box_7{
+  background-color: #21618C;
+}
+#box_8{
+  background-color: #76448A;
+}
+#box_9{
+  background-color: #E59866;
+}
+#box_10{
+  background-color: #95A5A6;
+}
+#box_11{
+  background-color: #F7DC6F;
+}
+#box_12{
+  background-color: #3498DB;
+}
+
+.box:hover{
+  box-shadow: 0 0 8px #FDFEFE;
+  z-index: 20;
+}
+.crawl{
+  -webkit-animation: crawl 4s;
+}
+.flip{
+  -webkit-animation: flip 4s;
+}
+.jump{
+  -webkit-animation: jump 4s;
+}
+
+/* Animations */
+@-webkit-keyframes jump{
+  0%{-webkit-transform:translateY(0) scale(0.7, 0.7);}
+  10%{-webkit-transform:translateY(-50px) scale(0.7, 0.7);}
+  30%{-webkit-transform:translateY(2000px) scale(0.7, 0.7);}
+  70%{-webkit-transform:translateY(-100px); opacity: 0}
+  100%{-webkit-transform:translateY(0px);}
+
+}
+
+@-webkit-keyframes crawl{
+  0% {-webkit-transform:translateY(400px);}
+  10%{-webkit-transform:translateY(350px);}
+  30%{height: 40px; -webkit-transform:translateY(350px);}
+  40%{height: 80px; -webkit-transform:translateY(300px);}
+  45%{height: 40px; -webkit-transform:translateY(300px);}
+  50%{height: 80px; -webkit-transform:translateY(250px);}
+  55%{height: 40px; -webkit-transform:translateY(250px);}
+  60%{height: 80px; -webkit-transform:translateY(200px);}
+  65%{height: 40px; -webkit-transform:translateY(200px);}
+  70%{height: 80px; -webkit-transform:translateY(150px);}
+  75%{height: 40px; -webkit-transform:translateY(150px);}
+  80%{height: 80px; -webkit-transform:translateY(100px);}
+  85%{height: 40px; -webkit-transform:translateY(100px);}
+  90%{height: 80px; -webkit-transform:translateY(50px);}
+  95%{height: 40px; -webkit-transform:translateY(50px);}
+  100%{height: 80px; -webkit-transform:translateY(0px);}
+}
+
+@-webkit-keyframes flip{
+  0%{-webkit-transform:rotate(0); -webkit-transform-origin:top left;
+    -webkit-animation-timing-function: ease-in-out;}
+  10%{-webkit-transform:rotate(40deg); -webkit-transform-origin:top left;
+  -webkit-animation-timing-function: ease-in-out;}
+  20%{-webkit-transform:rotate(20deg); -webkit-transform-origin:top left;
+  -webkit-animation-timing-function: ease-in-out;}
+  30%{-webkit-transform:rotate(40deg); -webkit-transform-origin:top left;
+  -webkit-animation-timing-function: ease-in-out;}
+  40%{-webkit-transform:rotate(20deg); -webkit-transform-origin:top left;
+  -webkit-animation-timing-function: ease-in-out;}
+  50%{-webkit-transform:rotate(40deg); -webkit-transform-origin:top left;
+  -webkit-animation-timing-function: ease-in-out;}
+  60%{-webkit-transform:rotate(20deg); -webkit-transform-origin:top left;
+  -webkit-animation-timing-function: ease-in-out;}
+  70%{-webkit-transform:rotate(40deg); -webkit-transform-origin:top left;
+  -webkit-transform:translateY(1000px);}
+
+}
