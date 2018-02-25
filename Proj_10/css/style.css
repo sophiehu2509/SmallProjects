@@ -1,0 +1,44 @@
+body{
+  padding: 0;
+  margin: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.c-preview{
+  background: #000;
+  background: linear-gradient(135deg, #000000 0%,#000000 25%, #F9E79F 20%, #AF7AC5 75%);
+  width:600px;
+  height: 500px;
+  background-size: 400% 400%;
+
+  /* 下面的3行code 可以把图片keep in center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  /* transition 当鼠标滑过时，会有hover 的效果*/
+  transition: .5s ease-in-out;
+
+}
+.c-preview-img{
+  position: absolute;
+  background: #17202A url("../img/pic.gif") no-repeat center center;
+  /*for url, the default path is under the css file */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  /* mix-blend-mode 2个图片混合后的效果 */
+  mix-blend-mode: screen;
+  /*opacity: .5;*/
+
+}
+.c-preview:hover{
+  background-position: 100% 100%;
+}
