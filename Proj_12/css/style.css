@@ -1,0 +1,101 @@
+body {
+  background: #ddd;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.pic{
+  position: relative;
+  visibility: hidden;
+  display: block;
+  left: 50%;
+  height: 300px;
+  width:400px;
+  margin-top: 30px;
+  margin-left: -200px;
+}
+.pic:before {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  content: "";
+
+  /*调节active 开始的位置 可以加上 margin-top margin-left*/
+  top: 95%;
+  left: 50%;
+
+  color: #fff;
+  /*-webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;*/
+}
+.pic.active{
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 0.5s;
+}
+.pic.active:before {
+  height: 400px;
+  width: 500px;
+  border-radius: 5%;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -100px;
+  background-image: url("../img/pic.jpg");
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+
+a.button{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  border: #87CEFA solid 1px;
+  border-radius: 50%;
+  color: white;
+  padding: 11px 11px 13px 13px;
+  font-size: 24px;
+  background-color: #87CEFA;
+  display: block;
+  left: 50%;
+  bottom:80px;
+  margin-left: -25px;
+  transition: transform 0.25s;
+  top:auto;
+
+}
+
+a.button:hover{
+    /* 加上去之后特别丑，但是#aaaaaa 这个颜色应该要记住
+    box-shadow: -2px -3px #aaaaaa;*/
+    /*鼠标滑动时十字下面会有下划线*/
+    text-decoration: none;
+
+    /*鼠标滑动时十字的颜色会变*/
+    color:white;
+
+}
+a.button.active {
+  transform: rotate(135deg);
+  transition: transform 0.5s;
+  color:white;
+
+}
+
+
+.flip{
+  animation:flip 2s;
+}
+/*transform-origin: top center; top left； 300px 300px;*/
+@-webkit-keyframes flip{
+  0%{transform:rotate(0); transform-origin:bottom left;
+  animation-timing-function:ease-in-out;}
+  30%{transform:rotate(40deg); transform-origin:bottom left;
+  animation-timing-function:ease-in-out;}
+  50%{transform:rotate(100deg); transform-origin:bottom left;
+  animation-timing-function:ease-in-out;}
+  70%{transform:translateY(800px);}
+}
